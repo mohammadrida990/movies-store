@@ -43,14 +43,13 @@ const Billboard = () => {
   return (
     <div className="relative h-1/2">
       <video
-        // controls
         poster={data?.thumbnailUrl}
-        // autoPlay
+        autoPlay
         muted
-        // loop
+        loop
         className="w-full h-full object-cover brightness-[60%]"
       >
-        {/* <source src={movie.videoUrl} type="video/mp4" /> */}
+        <source src={data.videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

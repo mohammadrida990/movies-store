@@ -28,9 +28,7 @@ const WatchClient = ({ id }: Props) => {
 
       <video
         controls
-        autoPlay
         muted
-        loop
         poster={data?.thumbnailUrl}
         className="w-full h-full object-cover"
       >

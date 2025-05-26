@@ -45,14 +45,12 @@ const InfoModel = ({
         >
           <div className="relative h-96">
             <video
-              // controls
+              controls
               poster={data?.thumbnailUrl}
-              // autoPlay
               muted
-              // loop
               className="w-full h-full object-cover brightness-[60%]"
             >
-              {/* <source src={movie.videoUrl} type="video/mp4" /> */}
+              <source src={data.videoUrl} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
 
